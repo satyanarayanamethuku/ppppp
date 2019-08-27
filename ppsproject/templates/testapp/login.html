@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#<script language="JavaScript">#}
+{#  javascript:window.history.forward(0);#}
+{#</script>#}
+<h1>Login Page</h1>
+{{ msg }}
+<form method="post">
+    {% csrf_token %}
+    Enter name:
+    <input type="text" name="t1"><br>
+    Enter Password:
+    <input type="password" name="t2"><br>
+    <input type="submit" value="login">
+</form>
+</body>
+</html>
